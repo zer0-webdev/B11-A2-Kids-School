@@ -111,3 +111,33 @@ header{
     text-decoration: none;
     line-height: 30px;
 }
+
+.mobile-menu{
+    border: none;
+    display: none;
+}
+.mobile-menu img{}
+
+@media screen and (max-width: 992px) {
+    .logo{
+        height: 46px;
+        width: 46px;
+    }
+    .logo-text{
+        display: none;
+    }
+    .nav-contact-btn{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    header{
+        border-bottom: 1px solid #FEA301;
+        padding: 12px 16px;
+    }
+
+}
