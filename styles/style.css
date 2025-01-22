@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+}
+/* Text Colors */
+.text-white{
+    color: #fff;
+}
+.text-sky{
+    color: #01ACFD;
+}
+.text-orange{
+    color: #FEA301;
+}
+.text-cyan{
+    color: #05D4DF;
+}
+.text-purple{
+    color: #5D58EF;
+}
+.text-black{
+    color: #000;
+}
+/* BG Colors */
+.bg-green{
+    background-color: #95B226;
+}
+.bg-cyan{
+    background-color: #3CD8E8;
+}
+.bg-purple{
+    background-color: #5D58F0;
+}
+.bg-black{
+    background-color: #000;
+}
+.bg-orange{
+    background-color: #FEA301;
+}
+/* Header Styling */
+header{
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.logo{
+    height: 62px;
+    width: 62px;
+}
+.logo-text{
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar{}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.nav-item{
+
+}
+.nav-item a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration:none;
+    transition: linear 0.3s;
+}
+.nav-item a:hover{
+    font-weight: 700;
+}
+
+.nav-btn-box{}
+.nav-contact-btn{
+    padding: 10px 60px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+.nav-contact-btn:hover{
+    background-color: #000;
+}
+
+.nav-contact-btn a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 30px;
+}
