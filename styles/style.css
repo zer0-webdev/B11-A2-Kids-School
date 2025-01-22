@@ -233,3 +233,86 @@ header{
 }
 
 /* Student Curriculum */
+.student-curriculum{
+    
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.student-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+}
+.student-container .container{
+    margin: 80px auto;
+    justify-content: center;
+    gap: 28px;
+}
+
+.curriculum-card{
+    width: 370px;
+    height: 480px;
+    border-radius: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+.curriculum-card *{
+    margin-bottom: 32px;
+}
+.gr-blue{
+    border: 1px solid rgb(222, 245, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.gr-orange{
+    border: 1px solid rgb(255, 244, 220);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.gr-purple{
+    border: 1px solid rgb(242, 232, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculum-card img{
+    width: 150px;
+}
+.curriculum-card h3{}
+.curriculum-card p{
+    text-align: center;
+}
+.curriculum-card a{
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 0;
+    transition: 0.4s;
+}
+.curriculum-card a:hover{
+    transform: scale(1.2);
+}
+
+.slider-btn{
+    background-color: #FEA301;
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 992px){
+    .curriculum-card{
+        width: 90%;
+       height: auto;
+       padding: 36px 28px 36px 28px;
+    }
+    .slider-btn{
+        display: none;
+    }
+}
