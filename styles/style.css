@@ -28,6 +28,7 @@ body{
     font-weight: 700;
     line-height: 1.875rem;
     width: 197px;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: #FEA301;
@@ -116,6 +117,9 @@ h4{
 }
 .bg-orange{
     background-color: #FEA301;
+}
+.bg-sky{
+    background-color: #01ACFD;
 }
 
 
@@ -303,6 +307,7 @@ header{
     width: 60px;
     height: 60px;
     margin: 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 992px){
@@ -345,7 +350,10 @@ header{
 .big-card{
     max-width: 540px;
 }
-.big-card p, h3{
+.big-card  p{
+    padding: 20px;
+}
+.big-card h3{
     padding: 20px;
 }
 .big-card img{
@@ -395,3 +403,65 @@ header{
         padding: 40px auto;
     }
 } 
+
+/* Footer */
+
+footer{
+    display: flex;
+    padding: 100px 20px;
+}
+.footer-container{
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 30px;
+}
+.column{
+    max-width: 33%;
+}
+.column h3{
+    margin-bottom: 32px;
+}
+.box p{
+    color: #fff;
+}
+.footer-menu{
+    list-style: none;
+    color: #fff;
+}
+.footer-menu li{
+    margin-bottom: 20px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.footer-menu li:hover{
+    font-weight: 900;
+    cursor: pointer;
+}
+.footer-menu li:last-child{
+    margin-bottom: 0;
+}
+.social-list{
+    list-style: none;
+}
+.social-list li{
+    display: inline;
+    
+}
+.social-list li img{
+    transition: 0.4s;
+}
+.social-list li img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+@media  screen and (max-width: 992px) {
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .column{
+        max-width: 100%;
+    }
+}
