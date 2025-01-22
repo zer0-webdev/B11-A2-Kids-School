@@ -244,7 +244,6 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 60px auto;
 }
 .student-container .container{
     margin: 80px auto;
@@ -315,6 +314,9 @@ header{
     .slider-btn{
         display: none;
     }
+    .student-container .container{
+        margin: 0;
+    }
 }
 
 /* Our Stories */
@@ -323,15 +325,15 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 40px 0;
 }
 .our-stories-section-container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 60px auto;
 }
 .our-stories-section .container{
-    margin: 80px auto;
+    margin: 60px auto;
     justify-content: center;
     gap: 28px;
 }
@@ -384,5 +386,12 @@ header{
     }
     .story-card .date-stamp{
         bottom: 35%;
+    }
+    .our-stories-section .container{
+        margin: 0;
+    }
+    .our-stories-section-container{
+        margin: 0px auto;
+        padding: 40px auto;
     }
 } 
