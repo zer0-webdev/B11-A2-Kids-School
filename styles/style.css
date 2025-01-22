@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-
+/* Universal Styles */
 *{
     padding: 0;
     margin: 0;
@@ -15,10 +15,76 @@ body{
     max-width: 1160px;
     margin: 0 auto;
     display: flex;
+    padding: 16px;
+}
+.btn{
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    transition: 0.4s;
+    background-color: #000;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    width: 197px;
+}
+.btn:hover{
+    background-color: #FEA301;
+}
+@media screen and (max-width: 992px){
+    .btn{
+        font-size: 1rem;
+        width: 131px;
+        padding: 6px;
+    }
+    .container{
+        flex-wrap: wrap;
+        
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 3.8125rem;
+}
+h2{
+    font-size: 2.875rem;
+    line-height: 3.5625rem;
+}
+h3{
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+} 
+h4{
+    font-size: 0.9375rem;
+    line-height:  1.75rem;
+} 
+
+@media screen and (max-width: 992px) {
+    h1{
+        font-size: 2rem;
+        line-height: normal;
+    }
+    h2{
+        font-size: 1.625rem;
+        line-height: normal;
+    }
+    h3{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    h4{
+        font-size: 0.5625rem;
+        line-height: 1.0625rem;
+    }
 }
 /* Text Colors */
 .text-white{
-    color: #fff;
+    color: #fff; 
 }
 .text-sky{
     color: #01ACFD;
@@ -51,6 +117,8 @@ body{
 .bg-orange{
     background-color: #FEA301;
 }
+
+
 /* Header Styling */
 header{
     padding: 20px 10px;
@@ -94,24 +162,12 @@ header{
     font-weight: 700;
 }
 
-.nav-btn-box{}
-.nav-contact-btn{
-    padding: 10px 60px;
-    border: none;
-    border-radius: 12px;
-    transition: 0.4s;
+.nav-btn-box > .btn > a{
+    text-decoration: none;
 }
-.nav-contact-btn:hover{
+.nav-btn-box > .btn:hover{
     background-color: #000;
 }
-
-.nav-contact-btn a{
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    line-height: 30px;
-}
-
 .mobile-menu{
     border: none;
     display: none;
@@ -126,7 +182,7 @@ header{
     .logo-text{
         display: none;
     }
-    .nav-contact-btn{
+    .nav-btn-box > .btn{
         display: none;
     }
     .nav-links{
@@ -141,3 +197,39 @@ header{
     }
 
 }
+
+/* Hero Styling */
+
+.hero > .container{
+    align-items: center;
+    gap: 50px;
+}
+
+.column-1 *{
+    margin-bottom: 24px;
+    max-width: 640px;
+}
+
+.column-2{
+    max-width: 468px;
+}
+.hero-img{
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .column-1 *{
+        margin-bottom: 18px;
+    }
+    .column-1{
+        order: 2;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .column-2{
+        order: 1;
+        margin: 0 auto;
+    }
+}
+
+/* Student Curriculum */
